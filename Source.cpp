@@ -5,14 +5,14 @@
 
 int vvod_c_proverv_error(int numb)
 {
-	int n,a;
+	int chislo,prov;
 	bool yes = false;
 
 	while (yes == false)
 	{
-		printf("Vvedite chislo x%d:", numb);
-		a = scanf("%d", &n);
-		if (!a)
+		printf("Vvedite chislo x%d: ", numb);
+		prov = scanf("%d", &chislo);
+		if (!prov)
 		{
 			printf("ERROR. Vvedeno ne verno. Vvedite prostoe chislo\n");
 			getchar();
@@ -24,7 +24,7 @@ int vvod_c_proverv_error(int numb)
 		}
 	}
 
-	return n;
+	return chislo;
 }
 
 
@@ -34,8 +34,6 @@ int vvod_c_proverv_error(int numb)
 int main()
 {
 	int x1, x2, x3, Sum;
-
-	int n;
 
 	x1 = vvod_c_proverv_error(1);
 
