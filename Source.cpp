@@ -3,7 +3,7 @@
 
 
 
-int vvod_c_proverv_error(int numb)
+int validated_input(int numb)
 {
 	int chislo,prov;
 	int errors = 0;
@@ -35,11 +35,11 @@ int main()
 {
 	int x1, x2, x3, Sum;
 
-	x1 = vvod_c_proverv_error(1);
+	x1 = validated_input(1);
 
-	x2 = vvod_c_proverv_error(2);
+	x2 = validated_input(2);
 
-	x3 = vvod_c_proverv_error(3);
+	x3 = validated_input(3);
 
 	printf("Vvedenie znacheni \nx1 = %d \nx2 = %d \nx3 = %d\n", x1, x2, x3);
 	
