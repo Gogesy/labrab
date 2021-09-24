@@ -3,7 +3,9 @@
 
 
 
-int vvod_c_proverv_error(int index)
+
+int validated_input(int index)
+
 {
 	int number, check;
 	int errors = 0;
@@ -35,11 +37,13 @@ int main()
 {
 	int number1, number2, number3, Sum;
 
-	number1 = vvod_c_proverv_error(1);
 
-	number2 = vvod_c_proverv_error(2);
+	number1 = validated_input(1);
 
-	number3 = vvod_c_proverv_error(3);
+	number2 = validated_input(2);
+
+	number3 = validated_input(3);
+
 
 	printf("Vvedenie znacheni \nx1 = %d \nx2 = %d \nx3 = %d\n", number1, number2, number3);
 	
