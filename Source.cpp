@@ -6,9 +6,9 @@
 int vvod_c_proverv_error(int numb)
 {
 	int chislo,prov;
-	bool yes = false;
+	int errors = 0;
 
-	while (yes == false)
+	while (errors == 0)
 	{
 		printf("Vvedite chislo x%d: ", numb);
 		prov = scanf("%d", &chislo);
@@ -20,7 +20,7 @@ int vvod_c_proverv_error(int numb)
 		else
 		{
 			
-			yes = true;
+			errors = 1;
 		}
 	}
 
