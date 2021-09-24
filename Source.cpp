@@ -27,7 +27,7 @@ int vvod_c_proverv_error(int numb)
 	return chislo;
 }
 
-
+// подправить проверку
 
 
 
